@@ -1,0 +1,16 @@
+<div data-test="title">Book {{ data.home.title }}</div>
+<div data-test="price">${{ data.home.price }} per night</div>
+<div data-test="check-in">
+   <input type="date" #checkIn/>
+</div>
+
+<div data-test="check-out">
+   <input type="date" #checkOut />
+</div>
+
+<div data-test="total">
+  Total : ${{ calculateTotal(checkIn.value, checkOut.value) }}
+</div>
+<div data-test="book-btn">
+   <button (click) ="bookHome()" >Book</button>
+</div>

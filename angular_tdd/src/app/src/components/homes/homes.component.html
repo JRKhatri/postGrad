@@ -1,0 +1,15 @@
+<div class="home-display">
+    <div class="home-individual" data-test="home" *ngFor="let home of homes$ | async">
+        <div data-test="title">{{home.title}}</div>
+       
+        <div data-test="image"><img src ="{{home.image}}" width="200"/></div>
+        <div data-test="location">{{home.location}}</div>
+        <div data-test="book-btn">
+            <button mat-raised-button (click)="openDialog(home)">Booking</button>
+        </div>
+        </div>
+
+    
+</div>
+
+

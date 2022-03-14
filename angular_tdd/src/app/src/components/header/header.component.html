@@ -1,0 +1,48 @@
+<nav>
+    <mat-tab-group>
+        <mat-tab data-test="logo">
+            <ng-template  mat-tab-label>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" >home</mat-icon> 
+            </ng-template>
+</mat-tab>
+<mat-tab data-test="search" >
+<ng-template mat-tab-label>
+<div ><input>Search</div>
+</ng-template >
+</mat-tab>
+</mat-tab-group>
+
+    <br>
+
+</nav>
+<div class="flex-container">
+    <div class="example-label" data-test="home-type">
+    <button mat-raised-button [matMenuTriggerFor]="homeTypes" >Home Types</button>
+    <mat-menu #homeTypes>
+        <button mat-menu-item>Apartment</button>
+        <button mat-menu-item>Single Home</button>
+      </mat-menu>
+
+    </div>
+    <div class="example-label" data-test="date">
+        <button mat-button [matMenuTriggerFor]="dateTypes" >Dates</button>
+    <mat-menu #dateTypes>
+        <button mat-menu-item>WeekEnd</button>
+        <button mat-menu-item>Week Days</button>
+      </mat-menu>
+    </div>
+    <div class="example-label" data-test="price">
+        <button mat-button [matMenuTriggerFor]="prices" >Price</button>
+    <mat-menu #prices>
+        <button mat-menu-item>Below $100 </button>
+        <button mat-menu-item>Above $100</button>
+      </mat-menu>
+    </div>
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.flex-container{
+    display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
